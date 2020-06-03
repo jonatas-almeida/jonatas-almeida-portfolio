@@ -1,0 +1,312 @@
+:root{
+    --standard-color: #1AFFC1;
+    --standard-gradient: linear-gradient(to right, #00FFF7, #0AB279);
+    --standard-white: #fff;
+    --standard-background-color: #272727;
+    --standard-opacity-white: rgba(255, 255, 255, 0.2);
+    --standard-gray: #2e2e2e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    overflow-x: hidden;
+}
+
+
+html,
+body{
+    scroll-behavior: smooth;
+    height: 100%;
+    background: var(--standard-background-color);
+}
+
+section{
+    padding: 150px;
+}
+
+#menu{
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    z-index: 99;
+    background-color: var(--standard-background-color);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#menu ul{
+    float: right;
+    padding-right: 240px;
+    
+}
+
+#menu ul li{
+    display: inline;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+#menu ul li a{
+    text-decoration: none;
+}
+
+#menu-item{
+    font-family: Caviar Dreams, sans-serif;
+    font-weight: normal;
+    color: var(--standard-white);
+}
+
+#menu-item-contato{
+    font-family: Caviar Dreams, sans-serif;
+    font-weight: bold;
+    color: var(--standard-color);
+}
+
+#home-screen{
+    height: 100%;
+}
+
+
+#welcome-text{
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 150px;
+    cursor: default;
+}
+
+#welcome-text h3{
+    font-family: Caviar Dreams, sans-serif;
+    font-size: 30pt;
+    font-weight: bold;
+    color: #fff;
+}
+
+#welcome-text h1{
+    font-family: Caviar Dreams, sans-serif;
+    font-size: 80pt;
+    font-weight: bold;
+    color: #fff;
+}
+
+#line-one{
+    width: 20%;
+    height: 12px;
+    background-color: var(--standard-color);
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#line-two{
+    width: 10%;
+    height: 12px;
+    background-color: var(--standard-color);
+    border-radius: 20px;
+    position: relative;
+    margin-top: -12px;
+    margin-left: 180px;
+}
+
+#welcome-text p{
+    font-family: Caviar Dreams, sans-serif;
+    font-size: 12pt;
+    font-weight: normal;
+    color: #fff;
+
+    margin-top: 20px;
+}
+
+#btn-curriculo{
+    width: 40%;
+    padding: 15px;
+    margin-top: 60px;
+    border: none;
+    border-radius: 5px;
+    background: var(--standard-color);
+
+    font-family: Caviar Dreams, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: var(--standard-white);
+    transition: ease-out 0.4s;
+    cursor: pointer;
+}
+
+#btn-curriculo:hover{
+    transition-timing-function: ease-out;
+    width: 50%;
+}
+
+
+#home-image{
+    float: right;
+}
+
+#home-image img{
+    width: 90%;
+    margin-top: 150px;
+}
+
+#social-media{
+    margin-top: 300px;
+    margin-left: 150px;
+    list-style: none;
+}
+
+#social-itens li{
+    display: inline;
+    margin-right: 10px;
+}
+
+#background-ornament-one{
+    width: 400px;
+    height: 400px;
+    background-color: var(--standard-white);
+    border-radius: 100%;
+    margin-top: 500px;
+    margin-left: 100px;
+    background-color: var(--standard-opacity-white);
+}
+
+#background-ornament-two{
+    width: 200px;
+    height: 200px;
+    background-color: var(--standard-white);
+    border-radius: 100%;
+    margin-top: -400px;
+    margin-left: 350px;
+    background-color: var(--standard-opacity-white);
+}
+
+#sobre{
+    width: 100%;
+    background-color: var(--standard-gray);
+}
+
+#sobre h3{
+    font-family: Caviar Dreams, sans-serif;
+    font-weight: bold;
+    color: var(--standard-white);
+    cursor: default;
+}
+
+#sobre h1{
+    font-family: Caviar Dreams, sans-serif;
+    font-size: 50pt;
+    font-weight: bold;
+    color: var(--standard-color);
+    cursor: default;
+}
+
+#sobre-title{
+    margin-top: 50px;
+}
+
+#jonatas-img{
+    width: 300px;
+    height: 440px;
+    border-radius: 10px;
+    background-image: url(../img/jonatas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    border: solid 10px var(--standard-color);
+    transition: ease-out 0.2s;
+}
+
+#sobre-title{
+    float: left;
+}
+
+#sobre-info{
+    width: 60%;
+    height: 100%;
+    display: block;
+    float: left;
+
+    margin-top: 60px;
+    margin-left: 160px;
+}
+
+#sobre-info h5{
+    font-family: Caviar Dreams, sans-serif;
+    font-size: 20pt;
+    color: var(--standard-color);
+    margin-bottom: 20px;
+}
+
+
+#sobre-info p{
+    font-family: Caviar Dreams, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    color: var(--standard-white);
+}
+
+#skills{
+    width: 100%;
+}
+
+#skills-title{
+    margin-top: 60px
+}
+
+#card{
+    width: 220px;
+    height: 300px;
+    background-color: #444444;
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(59, 42, 42, 0.2);
+    transition: ease-out 0.2s;
+}
+
+#card:hover{
+    transition-timing-function: ease-out;
+    transform: scale(0.95);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+#card-img{
+    width: 60%;
+    margin: 0 20%;
+
+    margin-top: 30px;
+}
+
+#card h3{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+#portfolio{
+    padding: 30px;
+    width: 100%;
+    padding-left: 250px;
+}
+
+#portfolio h3{
+    font-family: Caviar Dreams, sans-serif;
+    font-size: 40pt;
+    color: var(--standard-color);
+    margin-bottom: 60px;
+    margin-left: 90px;
+}
+
+#galeria{
+    width: 90%;
+    margin: 0 5%;
+}
+
+
+#galeria-itens li{
+    width: 300px;
+    height: 300px;
+    background-color: var(--standard-gray);
+    display: inline-block;
+}
