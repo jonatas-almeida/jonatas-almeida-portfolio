@@ -64,15 +64,22 @@ section{
 }
 
 #home-screen{
+    width: 100%;
     height: 100%;
+    background: url(../img/code.svg);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position-x: 750px;
+    background-position-y: 200px;
 }
 
 
+
 #welcome-text{
-    width: 100%;
     margin-top: 200px;
     margin-left: 150px;
     cursor: default;
+    z-index: 99;
 }
 
 #welcome-text h3{
@@ -90,7 +97,7 @@ section{
 }
 
 #line-one{
-    width: 20%;
+    width: 10%;
     height: 12px;
     background-color: var(--standard-color);
     border-radius: 20px;
@@ -99,7 +106,7 @@ section{
 }
 
 #line-two{
-    width: 10%;
+    width: 5%;
     height: 12px;
     background-color: var(--standard-color);
     border-radius: 20px;
@@ -118,7 +125,7 @@ section{
 }
 
 #btn-curriculo{
-    width: 40%;
+    width: 20%;
     padding: 15px;
     margin-top: 60px;
     border: none;
@@ -135,18 +142,10 @@ section{
 
 #btn-curriculo:hover{
     transition-timing-function: ease-out;
-    width: 50%;
+    width: 25%;
 }
 
 
-#home-image{
-    float: right;
-}
-
-#home-image img{
-    width: 90%;
-    margin-top: 150px;
-}
 
 #social-media{
     margin-top: 300px;
@@ -278,16 +277,19 @@ section{
     margin-top: 30px;
 }
 
-#card h3{
+#card-title{
+    font-family: Caviar Dreams, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: var(--standard-white);
     text-align: center;
     margin-top: 50px;
 }
 
 
 #portfolio{
-    padding: 30px;
     width: 100%;
-    padding-left: 250px;
+    padding: 0;
 }
 
 #portfolio h3{
@@ -299,14 +301,170 @@ section{
 }
 
 #galeria{
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
 }
 
+#galeria-itens{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 45px;
+}
 
 #galeria-itens li{
-    width: 300px;
+    width: 450px;
     height: 300px;
     background-color: var(--standard-gray);
     display: inline-block;
+    border-radius: 10px;
+    transition: ease-out 0.2s;
+}
+
+#galeria-itens li:hover{
+    transition-timing-function: ease-out;
+    transform: scale(0.9);
+}
+
+#portfolio-layout{
+    background-image: url(../portfolio-img/protfolio.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#greener{
+    background-image: url(../portfolio-img/greener-logo.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#greener-web{
+    background-image: url(../portfolio-img/greener-web.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#greener-dashboard{
+    background-image: url(../portfolio-img/greener-dashboard.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#traveller{
+    background-image: url(../portfolio-img/traveller.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#traveller-var{
+    background-image: url(../portfolio-img/traveller-var.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#annes-bakery{
+    background-image: url(../portfolio-img/annes-bakery.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#lovely-pet-layout{
+    background-image: url(../portfolio-img/lovely-pet.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#illustration{
+    background-image: url(../portfolio-img/girl-illustration.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#vietnam-soldier{
+    background-image: url(../portfolio-img/vietnam-soldier.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#mike-tyson{
+    background-image: url(../portfolio-img/mike-tyson.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#thomas-shelby{
+    background-image: url(../portfolio-img/thomas-shelby.png);
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+}
+
+#contato{
+    margin-top: 30px;
+    background-color: var(--standard-gray);
+}
+
+
+#contato h1{
+    font-family: Caviar Dreams, sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+    color: var(--standard-color);
+}
+
+#contacts{
+    margin-top: 30px;
+}
+
+#contacts h3{
+    font-family: Caviar Dreams, sans-serif;
+    font-weight: bold;
+    color: var(--standard-white);
+}
+
+#contacts li{
+    margin-left: 10px;
+    margin-right: 30px;
+    font-family: Caviar Dreams, sans-serif;
+    color: #fff;
+}
+
+#contacts li a{
+    text-decoration: none;
+    color: var(--standard-white);
+}
+
+
+#contacts li, h3{
+    list-style: none;
+    display: inline;
+}
+
+
+footer{
+    padding: 20px;
+}
+
+footer h5{
+    font-family: Caviar Dreams, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    color: var(--standard-white);
+}
+
+footer h5 span{
+    font-family: Caviar Dreams, sans-serif;
+    font-weight: bold;
+    color: var(--standard-color);
 }
