@@ -1,0 +1,157 @@
+:root{
+    --standard-color: #1AFFC1;
+    --standard-gradient: linear-gradient(to right, #00FFF7, #0AB279);
+    --standard-white: #fff;
+    --standard-background-color: #272727;
+    --standard-opacity-white: rgba(255, 255, 255, 0.2);
+    --standard-gray: #2e2e2e;
+}
+
+@media only screen and (max-width: 360px){
+    
+    html{
+        overflow-x: hidden;
+    }
+
+    #menu{
+        visibility: hidden;
+    }
+
+    #home-screen{
+        background-size: 300px;
+        background-position-x: 35px;
+        background-position-y: 400px;
+    }
+
+    #welcome-text{
+        margin-top: 80px;
+        margin-left: 30px;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    @keyframes lineOneAnim{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 45%;
+        }
+    }
+
+    @keyframes lineTwoAnim{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 15%;
+        }
+    }
+
+    #line-one{
+        animation-name: lineOneAnim;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    #line-two{
+        animation-name: lineTwoAnim;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    #btn-curriculo{
+        width: 50%;
+        transition: ease-out 0.2s;
+    }
+
+    #btn-curriculo:hover{
+        width: 50%;
+        transition-timing-function: ease-out;
+        transform: scale(0.9);
+    }
+
+    #social-media{
+        margin-top: 320px;
+        margin-left: 30px;
+    
+    }
+
+    #sobre{
+        width: 100%;
+    }
+
+    #sobre-info{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #sobre-info h5{
+        font-size: 12pt;
+    }
+
+    #sobre-info p{
+        width: 90%;
+    }
+
+
+    #skills-title{
+        font-size: 12pt;
+    }
+
+    #jonatas-img{
+        border-radius: 100%;
+        border: 5px solid var(--standard-color);
+        margin-left: 5px;
+    }
+
+    #portfolio{
+        padding: 10px;
+    }
+
+    #galeria-itens{
+        margin-left: 5px;
+    }
+
+    #galeria-itens li{
+        width: 80px;
+        height: 150px;
+    }
+
+    #contacts li, h3{
+        display: list-item;
+    }
+
+    #contacts li a{
+        margin-bottom: 10px;
+    }
+
+    #contact-one{
+        visibility: hidden;
+    }
+
+
+    #contact-two{
+        margin-top: -150px;
+    }
+
+    #contact h3{
+        font-family: Caviar Dreams, sans-serif;
+        font-weight: bold;
+        color:  var(--standard-white);
+    }
+
+    #contact li, a{
+        font-family: Caviar Dreams, sans-serif;
+        font-size: 10pt;
+        margin-bottom: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+
+
+}
